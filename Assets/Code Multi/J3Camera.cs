@@ -5,6 +5,12 @@ using UnityEngine;
 public class J3Camera : MonoBehaviour {
     public Camera Cam;
     public GameObject Player;
+
+    private void Start()
+    {
+        Player.SetActive(true);
+    }
+
     void Update()
     {
         if (MultiHowMany.Singleton.PlayerNumber == 2)

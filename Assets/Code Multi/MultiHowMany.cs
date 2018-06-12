@@ -5,7 +5,7 @@ using UnityEngine;
 public class MultiHowMany : MonoBehaviour {
 
     public static MultiHowMany Singleton;
-    public int PlayerNumber;
+    public int PlayerNumber = 4;
     private void Awake()
     {
         if(Singleton != null)

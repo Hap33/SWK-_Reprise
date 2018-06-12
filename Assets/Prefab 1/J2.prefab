@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 20115650846172624}
   - component: {fileID: 92047487182189854}
   - component: {fileID: 124240804542275194}
+  - component: {fileID: 114677865892163802}
   - component: {fileID: 81169265198374622}
   m_Layer: 0
   m_Name: Camera
@@ -1752,6 +1753,18 @@ MonoBehaviour:
   IsActive: 0
   timeLeft: 5
   ToThrow: ToThrow_P2
+--- !u!114 &114677865892163802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682385561671424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e776db8bab21b641bb1bce87b247681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cam: {fileID: 20115650846172624}
 --- !u!114 &114803482441698910
 MonoBehaviour:
   m_ObjectHideFlags: 1

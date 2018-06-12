@@ -17,7 +17,8 @@ public class WhosReady2p : MonoBehaviour
     {
         if (NumberOfReady == 2)
         {
-            SceneManager.LoadScene("Scene_test 2P");
+            SceneManager.LoadScene("map_1");
+            MultiHowMany.Singleton.DeuxJoueurs();
         }
     }
 }

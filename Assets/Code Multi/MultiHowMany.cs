@@ -6,6 +6,7 @@ public class MultiHowMany : MonoBehaviour {
 
     public static MultiHowMany Singleton;
     public int PlayerNumber = 4;
+    public int MapCategory = 1;
     private void Awake()
     {
         if(Singleton != null)
@@ -32,6 +33,16 @@ public class MultiHowMany : MonoBehaviour {
     public void QuatreJoueurs()
     {
         PlayerNumber = 4;
+    }
+
+    public void WhatMap()
+    {
+        MapCategory = 1;
+    }
+
+    public void ThisMap()
+    {
+        MapCategory = 2;
     }
 
 }

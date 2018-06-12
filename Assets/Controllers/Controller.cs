@@ -12,6 +12,7 @@ public class Controller : MonoBehaviour
     public GameObject Spawner5;
     public GameObject Spawner6;
     public GameObject Spawner7;
+    public GameObject Spawner8;
     public Vector3 FinalSpawner;
     public int SpawnerChoice;
     public float[] TpLocation= new float[2];
@@ -45,7 +46,7 @@ public class Controller : MonoBehaviour
     }
     void WhereToGo()
     {
-        SpawnerChoice = Random.Range(1, 8);
+        SpawnerChoice = Random.Range(1, 9);
         switch (SpawnerChoice)
         {
             case 1:
@@ -68,6 +69,9 @@ public class Controller : MonoBehaviour
                 break;
             case 7:
                 FinalSpawner = new Vector3(Spawner7.transform.position.x, Spawner7.transform.position.y, Spawner7.transform.position.z);
+                break;
+            case 8:
+                FinalSpawner = new Vector3(Spawner8.transform.position.x, Spawner8.transform.position.y, Spawner8.transform.position.z);
                 break;
             default:
                 FinalSpawner = new Vector3(250, 250, 250);

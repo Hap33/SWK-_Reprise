@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class J4Camera : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public Camera Cam;
+    public GameObject Player;
+
+    private void Start()
+    {
+        Player.SetActive(true);
+    }
+
+    private void Update()
+    {
+        if (MultiHowMany.Singleton.PlayerNumber != 4)
+        {
+            Player.SetActive(false);
+        }
+        if (MultiHowMany.Singleton.PlayerNumber == 4)
+        {
+            Cam.rect = new Rect(0, 0.5f, 0.5f, 0.5f);
+        }
+    }
 }

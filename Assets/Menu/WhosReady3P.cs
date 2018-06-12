@@ -16,7 +16,8 @@ public class WhosReady3P : MonoBehaviour {
     {
         if (NumberOfReady == 3)
         {
-            SceneManager.LoadScene("Scene_test 3P");
+            SceneManager.LoadScene("map_1");
+            MultiHowMany.Singleton.TroisJoueurs();
         }
     }
 }

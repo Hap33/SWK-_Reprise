@@ -5,11 +5,15 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     public GameObject Sword;
-    public float RangeX1;
-    public float RangeX2;
-    public float RangeY1;
-    public float RangeY2;
-    public float Height;
+    public GameObject Spawner1;
+    public GameObject Spawner2;
+    public GameObject Spawner3;
+    public GameObject Spawner4;
+    public GameObject Spawner5;
+    public GameObject Spawner6;
+    public GameObject Spawner7;
+    public Vector3 FinalSpawner;
+    public int SpawnerChoice;
     public float[] TpLocation= new float[2];
     //private float RandomSound;
     public bool touched = false;
@@ -26,7 +30,6 @@ public class Controller : MonoBehaviour
         moveHorizontal, moveVertical, cameraHorizontal, jumpAround;
     public bool isAlive = true;
     bool Jump = false;
-
     public void FixedUpdate()
     {
         GetComponent<Rigidbody>().AddForce(Physics.gravity * GetComponent<Rigidbody>().mass * 10);
@@ -42,9 +45,37 @@ public class Controller : MonoBehaviour
     }
     void WhereToGo()
     {
-       
-        TpLocation[0] = Random.Range(RangeX1, RangeX2);
-        TpLocation[1] = Random.Range(RangeY1, RangeY2);
+        SpawnerChoice = Random.Range(1, 8);
+        switch (SpawnerChoice)
+        {
+            case 1:
+                FinalSpawner = new Vector3(Spawner1.transform.position.x, Spawner1.transform.position.y, Spawner1.transform.position.z);
+                break;
+            case 2:
+                FinalSpawner = new Vector3(Spawner2.transform.position.x, Spawner2.transform.position.y, Spawner2.transform.position.z);
+                break;
+            case 3:
+                FinalSpawner = new Vector3(Spawner3.transform.position.x, Spawner3.transform.position.y, Spawner3.transform.position.z);
+                break;
+            case 4:
+                FinalSpawner = new Vector3(Spawner4.transform.position.x, Spawner4.transform.position.y, Spawner4.transform.position.z);
+                break;
+            case 5:
+                FinalSpawner = new Vector3(Spawner5.transform.position.x, Spawner5.transform.position.y, Spawner5.transform.position.z);
+                break;
+            case 6:
+                FinalSpawner = new Vector3(Spawner6.transform.position.x, Spawner6.transform.position.y, Spawner6.transform.position.z);
+                break;
+            case 7:
+                FinalSpawner = new Vector3(Spawner7.transform.position.x, Spawner7.transform.position.y, Spawner7.transform.position.z);
+                break;
+            default:
+                FinalSpawner = new Vector3(250, 250, 250);
+                break;
+        }
+        transform.position = FinalSpawner;
+        /*TpLocation[0] = Random.Range(RangeX1, RangeX2);
+        TpLocation[1] = Random.Range(RangeY1, RangeY2);*/
     }
     void Start()
     {
@@ -80,7 +111,7 @@ public class Controller : MonoBehaviour
         }
         if (col.gameObject.name == "sword kinda"&& touched == false && col.gameObject.tag != gameObject.tag|| col.gameObject.tag == "Water")
         {
-            transform.position = new Vector3(TpLocation[0], Height, TpLocation[1]);
+            transform.position = FinalSpawner;
             if (col.gameObject.tag == "Water")
             {
                 Sword.SetActive(false);
@@ -114,7 +145,6 @@ public class Controller : MonoBehaviour
     }
     void AboveWater() {
         WhereToGo();
-        transform.position = new Vector3(TpLocation[0], Height, TpLocation[1]);
     }
     
     /*void WhatToSay()

@@ -13,15 +13,15 @@ public class Poof : MonoBehaviour
     }
     void WhereToGo()
     {
-        TpLocation[0] = Random.Range(-90f, 105);
-        TpLocation[1] = Random.Range(-95f, 100);
+        TpLocation[0] = Random.Range(0, 500);
+        TpLocation[1] = Random.Range(0, 500);
     }
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Ceiling")
+        if (col.gameObject.tag == "Ceiling"||col.gameObject.tag == "Water")
         {
             WhereToGo();
-            transform.position = new Vector3(TpLocation[0], 8, TpLocation[1]);
+            transform.position = new Vector3(TpLocation[0], 150, TpLocation[1]);
         }
     }
 }

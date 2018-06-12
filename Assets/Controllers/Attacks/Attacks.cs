@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Attacks : MonoBehaviour {
+    public int SpawnerChoice;
     public AudioClip gotAKnight;
     public AudioSource fromThere;
     public GameObject Object;
@@ -16,7 +17,7 @@ public class Attacks : MonoBehaviour {
         if (other.CompareTag("epee") && epee.IsActive == false)
         {
             fromThere.PlayOneShot(gotAKnight);
-            other.transform.position = new Vector3(Random.Range(-50f, 50), Random.Range(8, 10), Random.Range(-50f, 50));
+            other.transform.position = new Vector3(Random.Range(0f, 500f), 150, Random.Range(0f, 500f));
             Instantiate(Object, gameObject.transform.position, gameObject.transform.rotation);
             epee.Activate();
         }

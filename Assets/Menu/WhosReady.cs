@@ -13,7 +13,7 @@ public class WhosReady : MonoBehaviour {
     void Update () {
 		if (NumberOfReady == 4)
         {
-            SceneManager.LoadScene("map_1");
+            SceneManager.LoadScene("Map1Play");
             MultiHowMany.Singleton.QuatreJoueurs();
         }
 	}

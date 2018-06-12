@@ -90,19 +90,19 @@ public class Pause : MonoBehaviour
         {
             if (P1Score > P2Score && P1Score > P3Score && P1Score > P4Score)
             {
-                NumberWinner = 1;
+                WhoWon.Singleton.WinnerNumber = 1;
             }
             if (P2Score > P1Score && P2Score > P3Score && P2Score > P4Score)
             {
-                NumberWinner = 2;
+                WhoWon.Singleton.WinnerNumber = 2;
             }
             if (P3Score > P2Score && P3Score > P1Score && P3Score > P4Score)
             {
-                NumberWinner = 3;
+                WhoWon.Singleton.WinnerNumber = 3;
             }
             if (P4Score > P2Score && P4Score > P3Score && P4Score > P1Score)
             {
-                NumberWinner = 4;
+                WhoWon.Singleton.WinnerNumber = 4;
             }
             SceneManager.LoadScene("WinnerScene");
         }

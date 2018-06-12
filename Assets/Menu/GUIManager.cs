@@ -36,4 +36,25 @@ public class GUIManager : MonoBehaviour {
     {
         SceneManager.LoadScene("Histoire");
     }
+    public void Map(int PlayerWeWant)
+    {
+        SceneManager.LoadScene("MapSelect");
+        MultiHowMany.Singleton.PlayerNumber = PlayerWeWant;
+    }
+    public void LoadMap( int Map)
+    {
+        MultiHowMany.Singleton.MapCategory = Map;
+        if (MultiHowMany.Singleton.PlayerNumber == 2)
+        {
+            SceneManager.LoadScene("ReadyUp_2p");
+        }
+        if (MultiHowMany.Singleton.PlayerNumber == 3)
+        {
+            SceneManager.LoadScene("ReadyUp_3p");
+        }
+        if (MultiHowMany.Singleton.PlayerNumber == 4)
+        {
+            SceneManager.LoadScene("ReadyUp_4p");
+        }
+    }
 }

@@ -17,7 +17,14 @@ public class WhosReady2p : MonoBehaviour
     {
         if (NumberOfReady == 2)
         {
-            SceneManager.LoadScene("Map1Play");
+            if(MultiHowMany.Singleton.MapCategory == 1)
+            {
+                SceneManager.LoadScene("Map1Play");
+            }
+            if(MultiHowMany.Singleton.MapCategory == 2)
+            {
+                SceneManager.LoadScene("map_2");
+            }
             MultiHowMany.Singleton.DeuxJoueurs();
         }
     }

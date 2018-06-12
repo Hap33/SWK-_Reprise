@@ -16925,6 +16925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 967180022}
   - component: {fileID: 967180021}
+  - component: {fileID: 967180023}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -16944,6 +16945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNumber: 4
+  MapCategory: 1
 --- !u!4 &967180022
 Transform:
   m_ObjectHideFlags: 0
@@ -16957,6 +16959,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &967180023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 967180020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef2a741c9553dd42b9f20ce7fd8e649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinnerNumber: 0
 --- !u!1001 &968948492
 Prefab:
   m_ObjectHideFlags: 0

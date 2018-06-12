@@ -11594,14 +11594,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 686493788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d003b201aa89aa748af09bf0427deb57, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f4703e317b825d46b5c71724c9dd4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TheWinner: {fileID: 726137616}
-  P1: 
-  P2: 
-  P3: 
-  P4: 
+  TheWinnerIs: {fileID: 726137616}
 --- !u!1001 &692436164
 Prefab:
   m_ObjectHideFlags: 0

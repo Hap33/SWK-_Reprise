@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: "Assets/scenes/Egalit\xE9.unity"
     guid: 1d1e36083eac6e245a99f3ea68450830
   - enabled: 1
-    path: Assets/scenes/map_1.unity
+    path: Assets/scenes/Map1Play.unity
+    guid: 62c7a235bc67e7548aeeab21310854f0
+  - enabled: 0
+    path: Assets/scenes/map_1_levelDesing.unity
     guid: 0e8f19bd07bc37c43b55217d6576f9ae
   m_configObjects: {}

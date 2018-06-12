@@ -24,7 +24,6 @@ public class MapMenu : MonoBehaviour {
         transform.Rotate(0, 0.5f, 0);
         if(SceneManager.GetActiveScene().buildIndex == 9)
         {
-            Debug.Log("Scène de jeu");
             Destroy(gameObject);
         }
     }

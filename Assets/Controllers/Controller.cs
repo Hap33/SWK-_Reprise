@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
+    public float Invert = 1;
     public GameObject Sword;
     public float Vitesse;
     public float JumpHeight;
@@ -95,8 +96,8 @@ public class Controller : MonoBehaviour
             var x = Input.GetAxis(moveHorizontal) * Time.deltaTime * Vitesse;
             var z = Input.GetAxis(moveVertical) * Time.deltaTime * Vitesse;
             var g = Input.GetAxis(cameraHorizontal) * Time.deltaTime * 150.0f;
-            transform.Translate(0, 0, z);
-            transform.Translate(-x, 0, 0);
+            transform.Translate(0, 0, z * Invert);
+            transform.Translate(-x * Invert, 0, 0);
             transform.Rotate(0, -g, 0);
             if (Input.GetButtonDown(jumpAround) && Jump == false)
             {

@@ -25,7 +25,7 @@ public class MusicMenu : MonoBehaviour {
     }
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Scene_test"|| SceneManager.GetActiveScene().name == "Scene_test 3p"|| SceneManager.GetActiveScene().name =="Scene_Test 2p")
+        if (SceneManager.GetActiveScene().buildIndex > 10 || SceneManager.GetActiveScene().buildIndex == 9)
         {
             Destroy(this.gameObject);
         }

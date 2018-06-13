@@ -22,9 +22,10 @@ public class MapMenu : MonoBehaviour {
     private void Update()
     {
         transform.Rotate(0, 0.5f, 0);
-        if(SceneManager.GetActiveScene().buildIndex == 9)
+        if(SceneManager.GetActiveScene().buildIndex > 10 || SceneManager.GetActiveScene().buildIndex == 9)
         {
-            Destroy(gameObject);
+            Debug.Log("Message");
+            Destroy(this.gameObject);
         }
     }
 

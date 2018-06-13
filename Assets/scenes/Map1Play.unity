@@ -340,6 +340,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -10653,6 +10657,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -10706,15 +10714,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10741,6 +10749,11 @@ Prefab:
       propertyPath: pausePanel
       value: 
       objectReference: {fileID: 1256707549}
+    - target: {fileID: 82956395045733876, guid: 1ae787cce071c0842bd854fa48a8a160,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
   m_IsPrefabParent: 0
@@ -10872,6 +10885,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -11262,6 +11279,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -17537,8 +17558,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1295845711}
-  m_LocalRotation: {x: -0.10977401, y: 0.15178116, z: 0.016982501, w: 0.98215264}
-  m_LocalPosition: {x: 179.15262, y: -108.4713, z: -310.14267}
+  m_LocalRotation: {x: -0.06625265, y: 0.015290004, z: 0.0010361659, w: 0.9976852}
+  m_LocalPosition: {x: 603.1975, y: -147.67226, z: -1070.0409}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23219,6 +23240,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -23351,6 +23376,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0

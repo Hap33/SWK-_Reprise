@@ -311,6 +311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -10410,15 +10414,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4272517566447674, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10445,6 +10449,11 @@ Prefab:
       propertyPath: pausePanel
       value: 
       objectReference: {fileID: 1089638190}
+    - target: {fileID: 82956395045733876, guid: 1ae787cce071c0842bd854fa48a8a160,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ae787cce071c0842bd854fa48a8a160, type: 2}
   m_IsPrefabParent: 0
@@ -10576,6 +10585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -10708,6 +10721,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -11209,6 +11226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -21709,6 +21730,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
@@ -21841,6 +21866,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0

@@ -25,6 +25,10 @@ public class WhosReady : MonoBehaviour {
             {
                 SceneManager.LoadScene("Map_3");
             }
+            if(MultiHowMany.Singleton.MapCategory == 4)
+            {
+                SceneManager.LoadScene("map_4");
+            }
             MultiHowMany.Singleton.QuatreJoueurs();
         }
 	}

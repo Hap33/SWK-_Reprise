@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Poof : MonoBehaviour
 {
+    public float RangeX1;
+    public float RangeX2;
+    public float RangeY1;
+    public float RangeY2;
     public float[] TpLocation = new float[2];
     public float Height;
     // Use this for initialization
@@ -14,8 +18,8 @@ public class Poof : MonoBehaviour
     }
     void WhereToGo()
     {
-        TpLocation[0] = Random.Range(0, 500);
-        TpLocation[1] = Random.Range(0, 500);
+        TpLocation[0] = Random.Range(RangeX1, RangeX2);
+        TpLocation[1] = Random.Range(RangeY1, RangeY2);
     }
     void OnCollisionEnter(Collision col)
     {

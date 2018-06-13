@@ -505,10 +505,10 @@ InputManager:
     m_Name: CamVert1
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: joystick button 6
-    altNegativeButton: a
-    altPositiveButton: d
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
     dead: 0.19
     sensitivity: 3
@@ -521,10 +521,10 @@ InputManager:
     m_Name: CamVert2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: joystick button 6
-    altNegativeButton: a
-    altPositiveButton: d
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
     dead: 0.19
     sensitivity: 3
@@ -537,10 +537,10 @@ InputManager:
     m_Name: CamVert3
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: joystick button 6
-    altNegativeButton: a
-    altPositiveButton: d
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
     dead: 0.19
     sensitivity: 3
@@ -553,10 +553,10 @@ InputManager:
     m_Name: CamVert4
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: joystick button 6
-    altNegativeButton: a
-    altPositiveButton: d
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
     dead: 0.19
     sensitivity: 3

@@ -920,13 +920,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1682385561671424}
-  m_LocalRotation: {x: 0.043138664, y: 0.9282837, z: -0.11397882, w: 0.35133648}
-  m_LocalPosition: {x: 1.6612545, y: -4.159073, z: 15.351837}
+  m_LocalRotation: {x: 0.12186938, y: 0, z: 0, w: 0.99254614}
+  m_LocalPosition: {x: 1.839996, y: 0.7099957, z: -3.039999}
   m_LocalScale: {x: 1, y: 1.002122, z: 1.0021224}
   m_Children: []
   m_Father: {fileID: 4993502898465460}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 14, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 14.000001, y: 0, z: 0}
 --- !u!4 &4698065650958450
 Transform:
   m_ObjectHideFlags: 1
@@ -1076,7 +1076,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1517479555696134}
   m_LocalRotation: {x: -0, y: -0.93525493, z: -0, w: 0.35397494}
-  m_LocalPosition: {x: 13.356468, y: 5.4400024, z: 6.8407803}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Children:
   - {fileID: 4690220038326352}
@@ -1819,8 +1819,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sword: {fileID: 1281462796676866}
-  Vitesse: 0
-  JumpHeight: 0
+  MyCamera: {fileID: 0}
+  PlayerText: {fileID: 0}
+  Vitesse: 8
+  JumpHeight: 10
   Spawner1: {fileID: 0}
   Spawner2: {fileID: 0}
   Spawner3: {fileID: 0}

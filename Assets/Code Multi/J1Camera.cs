@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class J1Camera : MonoBehaviour {
     public Camera Cam;
-	void Update()
+
+    void Update()
     {
         if (MultiHowMany.Singleton.PlayerNumber == 2)
         {
@@ -15,4 +16,6 @@ public class J1Camera : MonoBehaviour {
             Cam.rect = new Rect(0, 0.5f, 0.5f, 0.5f);
         }
     }
+
+    
 }

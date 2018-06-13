@@ -39,7 +39,7 @@ public class Controller : MonoBehaviour
     }
     public void Gravity()
     {
-        Physics.gravity = new Vector3(0, -1.5F, 0);
+        Physics.gravity = new Vector3(0, -3F, 0);
     }
     private void Awake()
     {

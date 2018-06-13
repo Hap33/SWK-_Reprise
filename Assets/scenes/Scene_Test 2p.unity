@@ -887,9 +887,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
+  Height: 0
 --- !u!114 &24143599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5805,6 +5810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33cb0a6c0d848ab466d9eef60e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnerChoice: 0
   gotAKnight: {fileID: 8300000, guid: b71e3b742f5efea4096e0bfcef577a1e, type: 3}
   fromThere: {fileID: 2121861107}
   Object: {fileID: 1718747050171446, guid: 5b2f8b55503aa8b489a923e773d2f5d7, type: 2}
@@ -31971,6 +31977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662b33cb0a6c0d848ab466d9eef60e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnerChoice: 0
   gotAKnight: {fileID: 8300000, guid: b71e3b742f5efea4096e0bfcef577a1e, type: 3}
   fromThere: {fileID: 1685426317}
   Object: {fileID: 1718747050171446, guid: 5b2f8b55503aa8b489a923e773d2f5d7, type: 2}
@@ -32843,9 +32850,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
+  Height: 0
 --- !u!114 &1059008957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33891,9 +33903,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
+  Height: 0
 --- !u!114 &1090873990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41919,9 +41936,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
+  Height: 0
 --- !u!114 &1215748988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43889,6 +43911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96cd8766cdb532488f106a4622866f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberWinner: 0
   IsActive: 0
   PauseButton: Pause
   BackButton: Menu
@@ -49948,9 +49971,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
+  Height: 0
 --- !u!114 &1395341302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51837,9 +51865,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c3db5c2a456c4d9dda1b7d4f94616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangeX1: 0
+  RangeX2: 0
+  RangeY1: 0
+  RangeY2: 0
   TpLocation:
   - 0
   - 0
+  Height: 0
 --- !u!114 &1527492726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59774,17 +59807,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77c240628f7a8843a7bcd6dcd52c79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sword: {fileID: 0}
+  Spawner1: {fileID: 0}
+  Spawner2: {fileID: 0}
+  Spawner3: {fileID: 0}
+  Spawner4: {fileID: 0}
+  Spawner5: {fileID: 0}
+  Spawner6: {fileID: 0}
+  Spawner7: {fileID: 0}
+  Spawner8: {fileID: 0}
+  FinalSpawner: {x: 0, y: 0, z: 0}
+  SpawnerChoice: 0
   TpLocation:
   - 0
   - 0
   touched: 0
-  dieLikeAGoat: {fileID: 8300000, guid: e07c36b8dd24b944590f6ff4bd3d871b, type: 3}
-  boing1: {fileID: 8300000, guid: c8aae482e69731a4897a71a7f6ab8c9b, type: 3}
-  boing2: {fileID: 8300000, guid: ad0953dcd8e7d2141b41114da7b64401, type: 3}
-  boing3: {fileID: 8300000, guid: 6a9f3b6883b71734280d2f341608ab8e, type: 3}
-  boing4: {fileID: 8300000, guid: dcdfcfa8164696c4b82662bec21fd1af, type: 3}
-  boing5: {fileID: 8300000, guid: b76888ea33cbfb340ae4b5e6e9eeaff6, type: 3}
-  boing6: {fileID: 8300000, guid: 1461389b88abcb94ea9431430b9614ca, type: 3}
   splash: {fileID: 8300000, guid: f7cec2a3013cff04996ba04164714fb9, type: 3}
   deathSound: {fileID: 1685426317}
   moveHorizontal: Horizontal_P1
@@ -72390,17 +72427,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77c240628f7a8843a7bcd6dcd52c79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sword: {fileID: 0}
+  Spawner1: {fileID: 0}
+  Spawner2: {fileID: 0}
+  Spawner3: {fileID: 0}
+  Spawner4: {fileID: 0}
+  Spawner5: {fileID: 0}
+  Spawner6: {fileID: 0}
+  Spawner7: {fileID: 0}
+  Spawner8: {fileID: 0}
+  FinalSpawner: {x: 0, y: 0, z: 0}
+  SpawnerChoice: 0
   TpLocation:
   - 0
   - 0
   touched: 0
-  dieLikeAGoat: {fileID: 8300000, guid: e07c36b8dd24b944590f6ff4bd3d871b, type: 3}
-  boing1: {fileID: 8300000, guid: c8aae482e69731a4897a71a7f6ab8c9b, type: 3}
-  boing2: {fileID: 8300000, guid: ad0953dcd8e7d2141b41114da7b64401, type: 3}
-  boing3: {fileID: 8300000, guid: 6a9f3b6883b71734280d2f341608ab8e, type: 3}
-  boing4: {fileID: 8300000, guid: dcdfcfa8164696c4b82662bec21fd1af, type: 3}
-  boing5: {fileID: 8300000, guid: b76888ea33cbfb340ae4b5e6e9eeaff6, type: 3}
-  boing6: {fileID: 8300000, guid: 1461389b88abcb94ea9431430b9614ca, type: 3}
   splash: {fileID: 8300000, guid: f7cec2a3013cff04996ba04164714fb9, type: 3}
   deathSound: {fileID: 2121861107}
   moveHorizontal: Horizontal_P2

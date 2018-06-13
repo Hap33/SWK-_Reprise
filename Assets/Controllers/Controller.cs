@@ -5,6 +5,8 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     public GameObject Sword;
+    public float Vitesse;
+    public float JumpHeight;
     public GameObject Spawner1;
     public GameObject Spawner2;
     public GameObject Spawner3;
@@ -89,15 +91,15 @@ public class Controller : MonoBehaviour
     {
         if (isAlive == true)
         {
-            var x = Input.GetAxis(moveHorizontal) * Time.deltaTime * 8.0f;
-            var z = Input.GetAxis(moveVertical) * Time.deltaTime * 8.0f;
+            var x = Input.GetAxis(moveHorizontal) * Time.deltaTime * Vitesse;
+            var z = Input.GetAxis(moveVertical) * Time.deltaTime * Vitesse;
             var g = Input.GetAxis(cameraHorizontal) * Time.deltaTime * 150.0f;
             transform.Translate(0, 0, z);
             transform.Translate(-x, 0, 0);
             transform.Rotate(0, -g, 0);
             if (Input.GetButtonDown(jumpAround) && Jump == false)
             {
-                GetComponent<Rigidbody>().velocity = Vector3.up * 5;
+                GetComponent<Rigidbody>().velocity = Vector3.up * JumpHeight;
                 Jump = true;
                 //WhatToSay();
             }

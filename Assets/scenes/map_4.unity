@@ -355,6 +355,18 @@ Prefab:
       propertyPath: m_Name
       value: Fancy_Tavern 1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
   m_IsPrefabParent: 0
@@ -673,6 +685,8 @@ GameObject:
   - component: {fileID: 163015360}
   - component: {fileID: 163015359}
   - component: {fileID: 163015361}
+  - component: {fileID: 163015363}
+  - component: {fileID: 163015362}
   m_Layer: 0
   m_Name: Mesh1_Group1_Model (1)
   m_TagString: Ground
@@ -745,12 +759,36 @@ MeshCollider:
   m_GameObject: {fileID: 163015357}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 99fbb332bbdb39543a2d1c1b4fec3aec, type: 3}
+--- !u!65 &163015362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163015357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45138422, y: 2.4495, z: 0.42076856}
+  m_Center: {x: -1.2773757, y: 1.22475, z: -0.8990011}
+--- !u!65 &163015363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163015357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1156389, y: 1.6916845, z: 1.0500153}
+  m_Center: {x: -1.2057825, y: 0.84584224, z: -0.9846557}
 --- !u!1001 &180529645
 Prefab:
   m_ObjectHideFlags: 0
@@ -10474,6 +10512,18 @@ Prefab:
       propertyPath: m_Name
       value: Fancy_Tavern 1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
   m_IsPrefabParent: 0
@@ -10936,11 +10986,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4791934969058312, guid: 31ac4231900bf2542ad983b510cc4653, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4791934969058312, guid: 31ac4231900bf2542ad983b510cc4653, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
         type: 2}
@@ -10987,6 +11037,20 @@ Prefab:
       propertyPath: ScoreButton
       value: 
       objectReference: {fileID: 21072750}
+    - target: {fileID: 4791934969058312, guid: 31ac4231900bf2542ad983b510cc4653, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
+        type: 2}
+      propertyPath: Vitesse
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
+        type: 2}
+      propertyPath: JumpHeight
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31ac4231900bf2542ad983b510cc4653, type: 2}
   m_IsPrefabParent: 0
@@ -11545,6 +11609,18 @@ Prefab:
     - target: {fileID: 1927680486936070, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
       propertyPath: m_Name
       value: Fancy_Tavern 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
@@ -16806,6 +16882,18 @@ Prefab:
       propertyPath: m_Name
       value: Fancy_Tavern 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
   m_IsPrefabParent: 0
@@ -16981,6 +17069,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
   m_IsPrefabParent: 0
@@ -17048,8 +17148,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1234819111}
-  m_LocalRotation: {x: 0.45634243, y: 0.0769135, z: 0.039610222, w: -0.88558847}
-  m_LocalPosition: {x: 934.0504, y: -12278.912, z: -9696.329}
+  m_LocalRotation: {x: -0.3186122, y: 0.37892547, z: 0.14083195, w: 0.8573612}
+  m_LocalPosition: {x: -3329.8994, y: -5236.317, z: -6324.8438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17091,7 +17191,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -22568,6 +22668,28 @@ Prefab:
       propertyPath: ScoreButton
       value: 
       objectReference: {fileID: 21072748}
+    - target: {fileID: 4970638470747138, guid: 9b5468eb3d8626e4fa533fcdc2524bab, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970638470747138, guid: 9b5468eb3d8626e4fa533fcdc2524bab, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970638470747138, guid: 9b5468eb3d8626e4fa533fcdc2524bab, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+        type: 2}
+      propertyPath: Vitesse
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+        type: 2}
+      propertyPath: JumpHeight
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b5468eb3d8626e4fa533fcdc2524bab, type: 2}
   m_IsPrefabParent: 0
@@ -22655,6 +22777,28 @@ Prefab:
       propertyPath: ScoreButton
       value: 
       objectReference: {fileID: 21072749}
+    - target: {fileID: 4286864779047454, guid: 2f0da1c06e13b0649afd454a94a29692, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286864779047454, guid: 2f0da1c06e13b0649afd454a94a29692, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286864779047454, guid: 2f0da1c06e13b0649afd454a94a29692, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
+        type: 2}
+      propertyPath: Vitesse
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
+        type: 2}
+      propertyPath: JumpHeight
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f0da1c06e13b0649afd454a94a29692, type: 2}
   m_IsPrefabParent: 0
@@ -22745,6 +22889,8 @@ GameObject:
   - component: {fileID: 1912108497}
   - component: {fileID: 1912108496}
   - component: {fileID: 1912108498}
+  - component: {fileID: 1912108500}
+  - component: {fileID: 1912108499}
   m_Layer: 0
   m_Name: Mesh1_Group1_Model (2)
   m_TagString: Ground
@@ -22817,12 +22963,36 @@ MeshCollider:
   m_GameObject: {fileID: 1912108494}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 99fbb332bbdb39543a2d1c1b4fec3aec, type: 3}
+--- !u!65 &1912108499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912108494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1156389, y: 1.6916845, z: 1.0500153}
+  m_Center: {x: -1.2057825, y: 0.84584224, z: -0.9846557}
+--- !u!65 &1912108500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912108494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45138422, y: 2.4495, z: 0.42076856}
+  m_Center: {x: -1.2773757, y: 1.22475, z: -0.8990011}
 --- !u!1 &1942101884
 GameObject:
   m_ObjectHideFlags: 0
@@ -32262,12 +32432,36 @@ MeshCollider:
   m_GameObject: {fileID: 1983510430}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 99fbb332bbdb39543a2d1c1b4fec3aec, type: 3}
+--- !u!65 &1983510433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983510430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1156389, y: 1.6916845, z: 1.0500153}
+  m_Center: {x: -1.2057825, y: 0.84584224, z: -0.9846557}
+--- !u!65 &1983510435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983510430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45138422, y: 2.4495, z: 0.42076856}
+  m_Center: {x: -1.2773757, y: 1.22475, z: -0.8990011}
 --- !u!1001 &2068370575
 Prefab:
   m_ObjectHideFlags: 0
@@ -32310,6 +32504,18 @@ Prefab:
     - target: {fileID: 1927680486936070, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
       propertyPath: m_Name
       value: Fancy_Tavern 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
@@ -32403,6 +32609,28 @@ Prefab:
       propertyPath: ScoreButton
       value: 
       objectReference: {fileID: 21072747}
+    - target: {fileID: 4483180678016796, guid: c6f9a4150db2a784581a7d428ea481c4, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483180678016796, guid: c6f9a4150db2a784581a7d428ea481c4, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483180678016796, guid: c6f9a4150db2a784581a7d428ea481c4, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
+        type: 2}
+      propertyPath: Vitesse
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
+        type: 2}
+      propertyPath: JumpHeight
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6f9a4150db2a784581a7d428ea481c4, type: 2}
   m_IsPrefabParent: 0
@@ -32505,6 +32733,18 @@ Prefab:
     - target: {fileID: 1927680486936070, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
       propertyPath: m_Name
       value: Fancy_Tavern 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
@@ -32749,6 +32989,18 @@ Prefab:
     - target: {fileID: 1927680486936070, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
       propertyPath: m_Name
       value: Fancy_Tavern 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719957851970076, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}

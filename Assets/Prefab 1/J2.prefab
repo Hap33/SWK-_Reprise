@@ -2202,10 +2202,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77c240628f7a8843a7bcd6dcd52c79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stamina: 1
+  StaminaBar: {fileID: 0}
+  IsRecharging: 0
   Invert: -1
   Sword: {fileID: 1281462796676866}
   Vitesse: 8
-  JumpHeight: 10
+  JumpHeight: 5
   Spawner1: {fileID: 0}
   Spawner2: {fileID: 0}
   Spawner3: {fileID: 0}
@@ -2227,6 +2230,7 @@ MonoBehaviour:
   moveVertical: Vertical_P2
   cameraHorizontal: Camera_P2
   jumpAround: Jump_P2
+  triggerRun: TriggerP2
   isAlive: 1
 --- !u!114 &114641100572064866
 MonoBehaviour:

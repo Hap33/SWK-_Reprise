@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
+    public float Stamina = 1;
+    public Image StaminaBar;
+    public bool IsRecharging;
     public float Invert = 1;
     public GameObject Sword;
     public float Vitesse;
@@ -32,7 +35,7 @@ public class Controller : MonoBehaviour
     public AudioClip splash;
     public AudioSource deathSound;
     public string
-        moveHorizontal, moveVertical, cameraHorizontal, jumpAround;
+        moveHorizontal, moveVertical, cameraHorizontal, jumpAround, triggerRun;
     public bool isAlive = true;
     bool Jump = false;
     public void FixedUpdate()
@@ -91,6 +94,8 @@ public class Controller : MonoBehaviour
     }
     void Update()
     {
+        Debug.Log(Input.GetAxis(triggerRun));
+        StaminaBar.fillAmount = Stamina;
         if (isAlive == true)
         {
             var x = Input.GetAxis(moveHorizontal) * Time.deltaTime * Vitesse;
@@ -104,6 +109,14 @@ public class Controller : MonoBehaviour
                 GetComponent<Rigidbody>().velocity = Vector3.up * JumpHeight;
                 Jump = true;
                 //WhatToSay();
+            }
+            if (!IsRecharging && Input.GetAxis(triggerRun) < 0)
+            {
+                Debug.Log(IsRecharging);
+                GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                Stamina = 0;
+                IsRecharging = true;
+                StartCoroutine(StaminaWaiting());
             }
         }
     }
@@ -153,6 +166,12 @@ public class Controller : MonoBehaviour
     }
     void AboveWater() {
         WhereToGo();
+    }
+    IEnumerator StaminaWaiting()
+    {
+        yield return new WaitForSeconds(3);
+        Stamina = 1;
+        IsRecharging = false;
     }
     
     /*void WhatToSay()

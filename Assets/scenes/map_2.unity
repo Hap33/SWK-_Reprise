@@ -241,6 +241,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &178487206 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1512872835000218, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+    type: 2}
+  m_PrefabInternal: {fileID: 1498239339}
 --- !u!1 &215508587 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 154346, guid: 86672f35e84daff4699b96a3c82ee675, type: 2}
@@ -588,6 +593,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1154740311343556, guid: 0716e18a8b7035646bda56de3be57e81,
     type: 2}
   m_PrefabInternal: {fileID: 393531318}
+--- !u!1 &414704169 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1985679558298466, guid: 2f0da1c06e13b0649afd454a94a29692,
+    type: 2}
+  m_PrefabInternal: {fileID: 522519813}
 --- !u!1001 &418511998
 Prefab:
   m_ObjectHideFlags: 0
@@ -655,6 +665,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1154740311343556, guid: 0716e18a8b7035646bda56de3be57e81,
     type: 2}
   m_PrefabInternal: {fileID: 418511998}
+--- !u!114 &426320976 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114155047457168906, guid: 568b7608494e9744f87119c8205c6346,
+    type: 2}
+  m_PrefabInternal: {fileID: 2140987857}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &428053350
 Prefab:
   m_ObjectHideFlags: 0
@@ -762,16 +778,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 24
       objectReference: {fileID: 0}
-    - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
+    - target: {fileID: 114127299180511604, guid: 2f0da1c06e13b0649afd454a94a29692,
         type: 2}
-      propertyPath: Spawner2
+      propertyPath: ScoreButton
       value: 
-      objectReference: {fileID: 418511999}
+      objectReference: {fileID: 2057367707}
     - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
         type: 2}
       propertyPath: Spawner1
       value: 
       objectReference: {fileID: 247240782}
+    - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
+        type: 2}
+      propertyPath: Spawner2
+      value: 
+      objectReference: {fileID: 418511999}
     - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
         type: 2}
       propertyPath: Spawner3
@@ -802,21 +823,36 @@ Prefab:
       propertyPath: Spawner8
       value: 
       objectReference: {fileID: 2048947909}
-    - target: {fileID: 114127299180511604, guid: 2f0da1c06e13b0649afd454a94a29692,
+    - target: {fileID: 114001219452333092, guid: 2f0da1c06e13b0649afd454a94a29692,
         type: 2}
-      propertyPath: ScoreButton
+      propertyPath: WhoToLook
       value: 
-      objectReference: {fileID: 2057367707}
+      objectReference: {fileID: 1491388007}
+    - target: {fileID: 114864515949385552, guid: 2f0da1c06e13b0649afd454a94a29692,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 178487206}
+    - target: {fileID: 114100436526079028, guid: 2f0da1c06e13b0649afd454a94a29692,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 1433182012}
     - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
         type: 2}
-      propertyPath: Vitesse
-      value: 8
+      propertyPath: Stamina
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
         type: 2}
       propertyPath: JumpHeight
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114627365124965348, guid: 2f0da1c06e13b0649afd454a94a29692,
+        type: 2}
+      propertyPath: StaminaBar
+      value: 
+      objectReference: {fileID: 426320976}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f0da1c06e13b0649afd454a94a29692, type: 2}
   m_IsPrefabParent: 0
@@ -1610,6 +1646,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2140987857}
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1433182012 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1417240653414682, guid: 31ac4231900bf2542ad983b510cc4653,
+    type: 2}
+  m_PrefabInternal: {fileID: 1483723766}
 --- !u!1001 &1483723766
 Prefab:
   m_ObjectHideFlags: 0
@@ -1649,16 +1690,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 23
       objectReference: {fileID: 0}
-    - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
+    - target: {fileID: 114859754147275728, guid: 31ac4231900bf2542ad983b510cc4653,
         type: 2}
-      propertyPath: Spawner2
+      propertyPath: ScoreButton
       value: 
-      objectReference: {fileID: 418511999}
+      objectReference: {fileID: 1241593117}
     - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
         type: 2}
       propertyPath: Spawner1
       value: 
       objectReference: {fileID: 247240782}
+    - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
+        type: 2}
+      propertyPath: Spawner2
+      value: 
+      objectReference: {fileID: 418511999}
     - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
         type: 2}
       propertyPath: Spawner3
@@ -1689,24 +1735,44 @@ Prefab:
       propertyPath: Spawner8
       value: 
       objectReference: {fileID: 2048947909}
-    - target: {fileID: 114859754147275728, guid: 31ac4231900bf2542ad983b510cc4653,
+    - target: {fileID: 114348086463142208, guid: 31ac4231900bf2542ad983b510cc4653,
         type: 2}
-      propertyPath: ScoreButton
+      propertyPath: WhoToLook
       value: 
-      objectReference: {fileID: 1241593117}
+      objectReference: {fileID: 1491388007}
+    - target: {fileID: 114380629670328706, guid: 31ac4231900bf2542ad983b510cc4653,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 414704169}
+    - target: {fileID: 114641100572064866, guid: 31ac4231900bf2542ad983b510cc4653,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 178487206}
     - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
         type: 2}
-      propertyPath: Vitesse
-      value: 8
+      propertyPath: Stamina
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
         type: 2}
       propertyPath: JumpHeight
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114630899612883940, guid: 31ac4231900bf2542ad983b510cc4653,
+        type: 2}
+      propertyPath: StaminaBar
+      value: 
+      objectReference: {fileID: 1769668564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31ac4231900bf2542ad983b510cc4653, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1491388007 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1311827297800960, guid: c6f9a4150db2a784581a7d428ea481c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 2081518769}
 --- !u!1001 &1498239339
 Prefab:
   m_ObjectHideFlags: 0
@@ -1746,16 +1812,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+    - target: {fileID: 114187746773957318, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
         type: 2}
-      propertyPath: Spawner2
+      propertyPath: ScoreButton
       value: 
-      objectReference: {fileID: 418511999}
+      objectReference: {fileID: 503251332}
     - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
         type: 2}
       propertyPath: Spawner1
       value: 
       objectReference: {fileID: 247240782}
+    - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+        type: 2}
+      propertyPath: Spawner2
+      value: 
+      objectReference: {fileID: 418511999}
     - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
         type: 2}
       propertyPath: Spawner3
@@ -1786,21 +1857,36 @@ Prefab:
       propertyPath: Spawner8
       value: 
       objectReference: {fileID: 2048947909}
-    - target: {fileID: 114187746773957318, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+    - target: {fileID: 114394214930919892, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
         type: 2}
-      propertyPath: ScoreButton
+      propertyPath: WhoToLook
       value: 
-      objectReference: {fileID: 503251332}
+      objectReference: {fileID: 1491388007}
+    - target: {fileID: 114232182253642388, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 414704169}
+    - target: {fileID: 114392170420591422, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 1433182012}
     - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
         type: 2}
-      propertyPath: Vitesse
-      value: 8
+      propertyPath: Stamina
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
         type: 2}
       propertyPath: JumpHeight
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114904584370845946, guid: 9b5468eb3d8626e4fa533fcdc2524bab,
+        type: 2}
+      propertyPath: StaminaBar
+      value: 
+      objectReference: {fileID: 1903606998}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b5468eb3d8626e4fa533fcdc2524bab, type: 2}
   m_IsPrefabParent: 0
@@ -1978,6 +2064,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1769668564 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114990487683290400, guid: 568b7608494e9744f87119c8205c6346,
+    type: 2}
+  m_PrefabInternal: {fileID: 2140987857}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1783231277
 Prefab:
   m_ObjectHideFlags: 0
@@ -2106,6 +2198,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0716e18a8b7035646bda56de3be57e81, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1814170446 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114466629750331788, guid: 568b7608494e9744f87119c8205c6346,
+    type: 2}
+  m_PrefabInternal: {fileID: 2140987857}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1854819696
 Prefab:
   m_ObjectHideFlags: 0
@@ -2286,6 +2384,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16faf6d81fa64a04294defda670168cb, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1903606998 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114141552395873394, guid: 568b7608494e9744f87119c8205c6346,
+    type: 2}
+  m_PrefabInternal: {fileID: 2140987857}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1959198483
 Prefab:
   m_ObjectHideFlags: 0
@@ -2585,16 +2689,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 114255033495041124, guid: c6f9a4150db2a784581a7d428ea481c4,
+        type: 2}
+      propertyPath: ScoreButton
+      value: 
+      objectReference: {fileID: 1374131196}
     - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
         type: 2}
-      propertyPath: Spawner2
+      propertyPath: StaminaBar
       value: 
-      objectReference: {fileID: 418511999}
+      objectReference: {fileID: 1814170446}
     - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
         type: 2}
       propertyPath: Spawner1
       value: 
       objectReference: {fileID: 247240782}
+    - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
+        type: 2}
+      propertyPath: Spawner2
+      value: 
+      objectReference: {fileID: 418511999}
     - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
         type: 2}
       propertyPath: Spawner3
@@ -2625,20 +2739,30 @@ Prefab:
       propertyPath: Spawner8
       value: 
       objectReference: {fileID: 2048947909}
-    - target: {fileID: 114255033495041124, guid: c6f9a4150db2a784581a7d428ea481c4,
+    - target: {fileID: 114378893729055320, guid: c6f9a4150db2a784581a7d428ea481c4,
         type: 2}
-      propertyPath: ScoreButton
+      propertyPath: WhoToLook
       value: 
-      objectReference: {fileID: 1374131196}
+      objectReference: {fileID: 178487206}
+    - target: {fileID: 114936121141667558, guid: c6f9a4150db2a784581a7d428ea481c4,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 414704169}
+    - target: {fileID: 114555000344120686, guid: c6f9a4150db2a784581a7d428ea481c4,
+        type: 2}
+      propertyPath: WhoToLook
+      value: 
+      objectReference: {fileID: 1433182012}
     - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
         type: 2}
-      propertyPath: Vitesse
-      value: 8
+      propertyPath: Stamina
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114183826533748768, guid: c6f9a4150db2a784581a7d428ea481c4,
         type: 2}
       propertyPath: JumpHeight
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6f9a4150db2a784581a7d428ea481c4, type: 2}

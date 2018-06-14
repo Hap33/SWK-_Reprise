@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 82208732617609670}
   - component: {fileID: 114082979393196120}
   - component: {fileID: 114066657856698798}
+  - component: {fileID: 65955159953450010}
   m_Layer: 0
   m_Name: J4
   m_TagString: P4
@@ -1169,7 +1170,7 @@ Transform:
   m_GameObject: {fileID: 1512872835000218}
   m_LocalRotation: {x: -0, y: 0.88406515, z: -0, w: -0.46736372}
   m_LocalPosition: {x: 269.28, y: 136.08, z: 110.840004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4661525691854194}
   - {fileID: 4920152506667130}
@@ -1730,6 +1731,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65955159953450010
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1512872835000218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &81785347286333862
 AudioListener:
   m_ObjectHideFlags: 1
@@ -2205,10 +2218,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77c240628f7a8843a7bcd6dcd52c79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stamina: 1
+  StaminaBar: {fileID: 0}
+  IsRecharging: 0
   Invert: 1
   Sword: {fileID: 1395715666047462}
-  Vitesse: 8
-  JumpHeight: 10
+  Vitesse: 40
+  JumpHeight: 15
   Spawner1: {fileID: 0}
   Spawner2: {fileID: 0}
   Spawner3: {fileID: 0}
@@ -2230,6 +2246,7 @@ MonoBehaviour:
   moveVertical: Vertical_P4
   cameraHorizontal: Camera_P4
   jumpAround: Jump_P4
+  triggerRun: TriggerP4
   isAlive: 1
 --- !u!114 &114991539583380392
 MonoBehaviour:
@@ -2262,7 +2279,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1512872835000218}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1

@@ -20,7 +20,7 @@ public class J4Camera : MonoBehaviour {
         }
         if (MultiHowMany.Singleton.PlayerNumber == 4)
         {
-            Cam.rect = new Rect(0, 0.5f, 0.5f, 0.5f);
+            Cam.rect = new Rect(0.5f, 0, 0.5f, 0.5f);
         }
     }
 }

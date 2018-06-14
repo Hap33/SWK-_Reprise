@@ -41,6 +41,10 @@ public class GUIManager : MonoBehaviour {
         SceneManager.LoadScene("MapSelect");
         MultiHowMany.Singleton.PlayerNumber = PlayerWeWant;
     }
+    public void ToTuto()
+    {
+        SceneManager.LoadScene("TutorialLevel");
+    }
     public void LoadMap( int Map)
     {
         MultiHowMany.Singleton.MapCategory = Map;
